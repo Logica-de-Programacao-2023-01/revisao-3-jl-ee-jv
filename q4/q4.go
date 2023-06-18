@@ -11,5 +11,5 @@ func SingleNumber(nums []int) int {
 	for _, num := range nums {
 		result ^= num
 	}
-	print(result)
+	return result
 }
