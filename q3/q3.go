@@ -5,5 +5,8 @@ package q3
 //A cada vez, você pode subir 1 ou 2 degraus. De quantas maneiras distintas você pode subir até o topo?
 
 func ClimbStairs(n int) int {
-	return 0
+    if n <= 2 {
+        return n
+    }
+    return ClimbStairs(n-1) + ClimbStairs(n-2)
 }
